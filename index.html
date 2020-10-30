@@ -1,126 +1,112 @@
 <!-- 
     Joseph Racca
-    10.22.2020
-    Mini Challenge 9: Random Name Generator
+    10.29.2020
+    Mini Challenge 11: Random Name Generator v2
  -->
 
-<!doctype html>
-<html lang="en">
-
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="./css/styles.css">
-
-    <title>+Academy</title>
-
-    <link rel="shortcut icon" href="./images/gradientCircle.png" />
-</head>
-
-<body id="bodyOdyOdy">
-    <!-- Name Input -->
-    <div class="container">
-        <!-- <h1 class="d-flex justify-content-center">Name Input Capture</h1> -->
-        <div class="row">
-            <!-- <div class="col-lg-12 d-flex justify-content-center">
-            <p>Here is where all of the content will be going. You can type a name here and we'll record it and print it.
-            </p>
-          </div> -->
-
-            <!-- <div class="col-lg-6 d-flex justify-content-end">
-            <h2>Here's your list of names...</h2>
-          </div> -->
-
-
-        </div>
-    </div>
-
-
-    <!-- RANDOM NAME DISPLAY -->
-
-    <div class="container-fluid padding noselect">
-        <div class="row center pb-5">
-            <div class="col center">
-                <p>SEASON 3 <img src="./images/codestackLogo.svg" style="width: 50px;" class="logo pl-2 pr-2"
-                        alt="Codestack logo"> ACADEMY+
-                </p>
-            </div>
-        </div>
-        <div id="clickable" class="row pb-5 setHeight">
-            <div class="col">
-                <h1 id="name">Click me for random.</h1>
-            </div>
-        </div>
-        <div class="row pt-5">
-            <div class="col">
-                <p style="opacity: 50%; text-align: center; color: white;">{1} click
-                    the above to randomize<br>{2} refresh to reset
-                    <br>{3} type a name below to add to the list</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12 d-flex justify-content-center pb-3">
-                <label for="inputText" class="sr-only">Password</label>
-                <input id="inputText" type="text" class="" placeholder="Add a name!" >
-            </div>
-            <div class="col-12">
-                <p class="instruct noselect" id="justEntered"><em>Type in a name and hit enter to add it to the list.</em></p>
-            </div>
-            <div>
-                <div class="col-12">
-                    <p class="instruct"></p>
-                </div>
-
-            </div>
-            <!-- <div class="col-12">
-                <div id=fillStudents class="btn btn-primary">USE S3 LIST</div>
-                <div id=clearList class="btn btn-primary">CLEAR LIST</div>
-            </div> -->
-            <!-- <div class="col">
-                    <div class="row">
-                        <div class="col-12">
-                            <ul id="outputText"></ul>
-                        </div>
-                    </div>
-                </div> -->
-        </div>
-
-        <div class="container noselect pt-5">
-            <hr>
-            <div class="row">
-                <div class="col center">
-                    <p>JOSEPH<a href="https://www.instagram.com/jracca/" target="_blank"><img
-                            src="./images/jrLogoWhite.svg" style="width: 50px;" class="logo pl-1 pr-2"
-                            alt="Joseph Racca's Logo"></a>RACCA</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- YOU CAN ENTER YOUR OWN NAME HERE -->
-
-
-
-
-
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
-
-    <script src="./js/script.js"></script>
-
-</body>
-
-</html>
+ <!doctype html>
+ <html lang="en">
+ 
+ <head>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+ 
+     <link rel="stylesheet" href="./css/styles.css">
+ 
+     <title>+Academy</title>
+ 
+     <link rel="shortcut icon" href="./images/gradientCircle.png" />
+ </head>
+ 
+ <body id="bodyOdyOdy">
+ 
+ 
+     <div class="container-fluid padding noselect">
+ 
+ 
+         <!-- MINI LOGO HEADER -->
+ 
+         <div class="row center pb-5">
+             <div class="col center">
+                 <p>SEASON 3 <img src="./images/codestackLogo.svg" style="width: 50px;" class="logo pl-2 pr-2"
+                         alt="Codestack logo"> ACADEMY+
+                 </p>
+             </div>
+         </div>
+ 
+ 
+         <!-- RANDOM NAME DISPLAY -->
+ 
+ 
+         <div id="clickable" class="row pb-5 setHeight">
+             <div class="col">
+                 <h1 id="name">Click me for random.</h1>
+             </div>
+         </div>
+ 
+ 
+         <!-- HELPFUL TIPS -->
+ 
+         <div class="row pt-5">
+             <div class="col">
+                 <p style="opacity: 50%; text-align: center; color: white;">{1} click
+                     the above to randomize<br>{2} refresh to reset
+                     <br>{3} type a name below to add to the list</p>
+             </div>
+         </div>
+ 
+         <!-- NAME INPUT -->
+ 
+         <div class="row">
+             <div class="col-12 d-flex justify-content-center pb-3">
+                 <label for="inputText" class="sr-only">Add Your Own Custom Name</label>
+                 <input id="inputText" type="text" class="" placeholder="Add a name!">
+             </div>
+ 
+ 
+             <div class="col-12">
+                 <p class="instruct noselect" id="justEntered"><em>Type in a name and hit enter to add it to the
+                         list.</em></p>
+             </div>
+ 
+         </div>
+ 
+ 
+         <!-- FOOTER -->
+         <div class="container noselect pt-5">
+             <hr>
+             <div class="row">
+                 <div class="col center">
+                     <p>JOSEPH<a href="https://www.instagram.com/jracca/" target="_blank"><img
+                                 src="./images/jrLogoWhite.svg" style="width: 50px;" class="logo pl-1 pr-2"
+                                 alt="Joseph Racca's Logo"></a>RACCA</p>
+                 </div>
+             </div>
+         </div>
+ 
+     </div>
+ 
+     <!-- YOU CAN ENTER YOUR OWN NAME HERE -->
+ 
+ 
+ 
+ 
+ 
+     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+         crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+         crossorigin="anonymous"></script>
+ 
+     <script src="./js/script.js"></script>
+ 
+ </body>
+ 
+ </html>

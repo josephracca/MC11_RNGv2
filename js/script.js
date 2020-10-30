@@ -160,39 +160,11 @@ let backgroundGrade = document.getElementById("bodyOdyOdy");
 let clickToGenerate = document.getElementById("clickable");
 let justEntered = document.getElementById("justEntered");
 
-//we need to edit it so that the whole area isn't clickable, but just isoalte it to the name
-
 let generateButton = document
   .getElementById("clickable")
   .addEventListener("click", function () {
     changeEverything();
   });
-
-// let fillStudents = document.getElementById("fillStudents").addEventListener("click", function() {
-//   //for loop to add initial array back to new array
-//   //but first clear array for sure...
-//   students2=[];
-  
-//   for( let i =0; i<students2.length; i++){
-//     students2.push(student[i]);
-//   }
-  
-//   // students2 = [];
-//   // console.log(students2);
-//   // students2 = students2;
-//   // console.log(students2);
-// })
-
-// let clearList = document.getElementById("clearList").addEventListener("click", function() {
-//   students2 = [];
-//   localStorage.clear();
-//   NFO == "";
-
-// })
-
-// function useCohortList(){
-//   students2 = students;
-// }
 
 function changeEverything() {
   if (students2 == null || students2 == "") {
@@ -201,13 +173,8 @@ function changeEverything() {
   } else {
     let randomNumber = Math.floor(Math.random() * students2.length);
     let randomName = students2[randomNumber];
-    // students2.splice(randomNumber, 1);
     randomNameDisplay.innerText = randomName;
-    // console.log(students2);
   }
-
-  //   let randomColor = allColors[Math.floor(Math.random() * allColors.length)];
-  //   randomNameDisplay.style.color = randomColor;
 
   let randomColorBG =
     allColors[Math.floor(Math.random() * allColors.length) + 1];
@@ -217,16 +184,8 @@ function changeEverything() {
   backgroundGrade.className = randomGrade;
 }
 
-// ADDITION TO THE RANDOM NAME GENERATOR
-
-// ------------------- JSON && LOCAL STORAGE -------------------
-//this is getting the element that we need, which we will use later to pul the value from
 let inputText = document.getElementById("inputText");
-
-//from the line of code, I want to say that we are parsing all of the information so that we can store it locally
 let NFO = JSON.parse(localStorage.getItem("Roster"));
-
-//this part above above still confuses me...
 
 inputText.addEventListener("keypress", function (e) {
   if (e.code == "Enter") {
